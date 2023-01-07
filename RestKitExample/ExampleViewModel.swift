@@ -8,18 +8,23 @@
 import Foundation
 import RestKit
 
-protocol ViewModel {
-    var service: Service { get set }
-}
-
 class ExampleViewModel: ObservableObject {
 
     @Published var text: String = "Nothing"
 
-    var service: Service = ExampleService()
+    var service: Service = ExampleGetService()
 
     func getDataFromAPI() async {
-        guard let result = await service.proccess() as? Response else { return }
-        text = result.name
+        if let response = await service.proccess().0 as? Response {
+            updateText(text: response.name)
+        } else if let error = await service.proccess().1 {
+            updateText(text: error.localizedDescription)
+        }
+    }
+
+    func updateText(text: String) {
+        DispatchQueue.main.async {
+            self.text = text
+        }
     }
 }

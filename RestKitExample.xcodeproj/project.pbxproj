@@ -14,7 +14,7 @@
 		2C0C59622968AF8C00DF8D26 /* RestKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2C0C59612968AF8C00DF8D26 /* RestKit */; };
 		2C0C59642968AFB900DF8D26 /* ExampleGetTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C59632968AFB900DF8D26 /* ExampleGetTask.swift */; };
 		2C0C59662968B0DD00DF8D26 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C59652968B0DD00DF8D26 /* ExampleViewModel.swift */; };
-		2C0C59682968C65000DF8D26 /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C59672968C65000DF8D26 /* ExampleService.swift */; };
+		2C0C59682968C65000DF8D26 /* ExampleGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C59672968C65000DF8D26 /* ExampleGetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		2C0C595F2968AF7700DF8D26 /* restkit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = restkit; path = ../restkit; sourceTree = "<group>"; };
 		2C0C59632968AFB900DF8D26 /* ExampleGetTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGetTask.swift; sourceTree = "<group>"; };
 		2C0C59652968B0DD00DF8D26 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
-		2C0C59672968C65000DF8D26 /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
+		2C0C59672968C65000DF8D26 /* ExampleGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				2C0C59522968AD6100DF8D26 /* Preview Content */,
 				2C0C59632968AFB900DF8D26 /* ExampleGetTask.swift */,
 				2C0C59652968B0DD00DF8D26 /* ExampleViewModel.swift */,
-				2C0C59672968C65000DF8D26 /* ExampleService.swift */,
+				2C0C59672968C65000DF8D26 /* ExampleGetService.swift */,
 			);
 			path = RestKitExample;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 				2C0C59662968B0DD00DF8D26 /* ExampleViewModel.swift in Sources */,
 				2C0C594F2968AD6000DF8D26 /* ContentView.swift in Sources */,
 				2C0C594D2968AD6000DF8D26 /* RestKitExampleApp.swift in Sources */,
-				2C0C59682968C65000DF8D26 /* ExampleService.swift in Sources */,
+				2C0C59682968C65000DF8D26 /* ExampleGetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
