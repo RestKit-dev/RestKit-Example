@@ -12,12 +12,12 @@ class ExampleViewModel: ObservableObject {
 
     @Published var text: String = "Nothing"
 
-    var service: Service = ExampleGetService()
-
     func getDataFromAPI() async {
-        if let response = await service.proccess().0 as? Response {
+        let service = ExampleGetService()
+        await service.proccess()
+        if let response = service.response as? Response {
             updateText(text: response.name)
-        } else if let error = await service.proccess().1 {
+        } else if let error = service.error {
             updateText(text: error.localizedDescription)
         }
     }

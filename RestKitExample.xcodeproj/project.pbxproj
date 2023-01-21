@@ -42,6 +42,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B24A10297C1A7400B990F8 /* GET */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C59632968AFB900DF8D26 /* ExampleGetTask.swift */,
+				2C0C59672968C65000DF8D26 /* ExampleGetService.swift */,
+			);
+			path = GET;
+			sourceTree = "<group>";
+		};
 		2C0C59402968AD6000DF8D26 = {
 			isa = PBXGroup;
 			children = (
@@ -63,14 +72,13 @@
 		2C0C594B2968AD6000DF8D26 /* RestKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				16B24A10297C1A7400B990F8 /* GET */,
 				2C0C595C2968AEE100DF8D26 /* Info.plist */,
 				2C0C594C2968AD6000DF8D26 /* RestKitExampleApp.swift */,
 				2C0C594E2968AD6000DF8D26 /* ContentView.swift */,
 				2C0C59502968AD6100DF8D26 /* Assets.xcassets */,
 				2C0C59522968AD6100DF8D26 /* Preview Content */,
-				2C0C59632968AFB900DF8D26 /* ExampleGetTask.swift */,
 				2C0C59652968B0DD00DF8D26 /* ExampleViewModel.swift */,
-				2C0C59672968C65000DF8D26 /* ExampleGetService.swift */,
 			);
 			path = RestKitExample;
 			sourceTree = "<group>";
