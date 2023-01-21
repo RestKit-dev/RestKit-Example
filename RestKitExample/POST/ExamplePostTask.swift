@@ -10,8 +10,8 @@ import RestKit
 
 class ExamplePostTask: HTTPPostTask {
 
-    override func post<E, D>(url: String, dto: E, decodeType: D.Type, accessToken: String? = nil) async where E : Encodable, D : Decodable {
-        await super.post(url: url, dto: dto, decodeType: decodeType, accessToken: accessToken)
+    override func post<E, D>(url: String, dto: E, decodeType: D.Type, accessToken: String? = nil, headers: [String:String] = ["":""], queryParameters: [String: String] = ["":""]) async where E : Encodable, D : Decodable {
+        await super.post(url: url, dto: dto, decodeType: decodeType, accessToken: accessToken, headers: headers, queryParameters: queryParameters)
     }
 
     override func didSuccess<T>(response: T) where T : Decodable {

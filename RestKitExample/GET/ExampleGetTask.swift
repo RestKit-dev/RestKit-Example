@@ -10,8 +10,8 @@ import RestKit
 
 class ExampleGetTask: HTTPGetTask {
 
-    override func get<T>(url: String, decodeType: T.Type, accessToken: String? = nil) async where T : Decodable {
-        await super.get(url: url, decodeType: decodeType, accessToken: accessToken)
+    override func get<T>(url: String, decodeType: T.Type, accessToken: String? = nil, headers: [String:String] = ["":""], queryParameters: [String: String] = ["":""]) async where T : Decodable {
+        await super.get(url: url, decodeType: decodeType, accessToken: accessToken, headers: headers, queryParameters: queryParameters)
     }
 
     override func didSuccess<T>(response: T) where T : Decodable {
