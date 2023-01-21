@@ -11,9 +11,7 @@ import RestKit
 class ExampleGetService: HTTPGetService {
 
     var task: HTTPGetTask = ExampleGetTask()
-
     var response: Decodable?
-
     var error: Error?
 
     func proccess() async {
@@ -21,8 +19,4 @@ class ExampleGetService: HTTPGetService {
         response = task.response
         error = task.error
     }
-}
-
-struct Response: Decodable {
-    let name: String
 }

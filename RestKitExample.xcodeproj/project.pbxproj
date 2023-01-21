@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		166D7642297C74E60062EAE8 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D7641297C74E60062EAE8 /* DTO.swift */; };
+		166D7644297C74F50062EAE8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166D7643297C74F50062EAE8 /* Response.swift */; };
+		16D1B05C297C6D5300EECBBA /* ExamplePostTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D1B05B297C6D5300EECBBA /* ExamplePostTask.swift */; };
+		16D1B05E297C6DDF00EECBBA /* ExamplePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D1B05D297C6DDF00EECBBA /* ExamplePostService.swift */; };
 		2C0C594D2968AD6000DF8D26 /* RestKitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C594C2968AD6000DF8D26 /* RestKitExampleApp.swift */; };
 		2C0C594F2968AD6000DF8D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C594E2968AD6000DF8D26 /* ContentView.swift */; };
 		2C0C59512968AD6100DF8D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C0C59502968AD6100DF8D26 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		166D7641297C74E60062EAE8 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
+		166D7643297C74F50062EAE8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		16D1B05B297C6D5300EECBBA /* ExamplePostTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePostTask.swift; sourceTree = "<group>"; };
+		16D1B05D297C6DDF00EECBBA /* ExamplePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePostService.swift; sourceTree = "<group>"; };
 		2C0C59492968AD6000DF8D26 /* RestKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0C594C2968AD6000DF8D26 /* RestKitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitExampleApp.swift; sourceTree = "<group>"; };
 		2C0C594E2968AD6000DF8D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166D7640297C74A20062EAE8 /* Payload */ = {
+			isa = PBXGroup;
+			children = (
+				166D7641297C74E60062EAE8 /* DTO.swift */,
+				166D7643297C74F50062EAE8 /* Response.swift */,
+			);
+			path = Payload;
+			sourceTree = "<group>";
+		};
 		16B24A10297C1A7400B990F8 /* GET */ = {
 			isa = PBXGroup;
 			children = (
@@ -49,6 +66,15 @@
 				2C0C59672968C65000DF8D26 /* ExampleGetService.swift */,
 			);
 			path = GET;
+			sourceTree = "<group>";
+		};
+		16D1B05A297C6CF400EECBBA /* POST */ = {
+			isa = PBXGroup;
+			children = (
+				16D1B05B297C6D5300EECBBA /* ExamplePostTask.swift */,
+				16D1B05D297C6DDF00EECBBA /* ExamplePostService.swift */,
+			);
+			path = POST;
 			sourceTree = "<group>";
 		};
 		2C0C59402968AD6000DF8D26 = {
@@ -72,6 +98,8 @@
 		2C0C594B2968AD6000DF8D26 /* RestKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				166D7640297C74A20062EAE8 /* Payload */,
+				16D1B05A297C6CF400EECBBA /* POST */,
 				16B24A10297C1A7400B990F8 /* GET */,
 				2C0C595C2968AEE100DF8D26 /* Info.plist */,
 				2C0C594C2968AD6000DF8D26 /* RestKitExampleApp.swift */,
@@ -182,6 +210,10 @@
 				2C0C59642968AFB900DF8D26 /* ExampleGetTask.swift in Sources */,
 				2C0C59662968B0DD00DF8D26 /* ExampleViewModel.swift in Sources */,
 				2C0C594F2968AD6000DF8D26 /* ContentView.swift in Sources */,
+				166D7642297C74E60062EAE8 /* DTO.swift in Sources */,
+				166D7644297C74F50062EAE8 /* Response.swift in Sources */,
+				16D1B05E297C6DDF00EECBBA /* ExamplePostService.swift in Sources */,
+				16D1B05C297C6D5300EECBBA /* ExamplePostTask.swift in Sources */,
 				2C0C594D2968AD6000DF8D26 /* RestKitExampleApp.swift in Sources */,
 				2C0C59682968C65000DF8D26 /* ExampleGetService.swift in Sources */,
 			);

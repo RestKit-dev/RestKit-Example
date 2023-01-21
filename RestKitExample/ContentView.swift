@@ -22,6 +22,17 @@ struct ContentView: View {
         }) {
             Text("GET")
         }
+
+        Spacer()
+            .frame(height: 20)
+
+        Button(action: {
+            Task {
+                await viewModel.postDataToAPI()
+            }
+        }) {
+            Text("POST")
+        }
     }
 }
 
